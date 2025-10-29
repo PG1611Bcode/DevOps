@@ -1,0 +1,20 @@
+1.	Manage Jenkins -> Tools -> JDK installations -> Add JDK
+2.	Run command in terminal
+
+Sudo su
+find / -type f -name java
+copy the path only till
+/usr/lib/jvm/java-17-openjdk-amd64/ ------->like this exclude bin/java/
+
+3.	Name -> java_home ,  JAVA_HOME -> Java path
+4.	Git installations -> Tick Install automatically
+5.	Maven installations -> Add Maven -> Name -> Mavenlatest, 
+6.	Click on apply -> Save
+
+7.	New Item -> CICD Pipeline -> Frestyle Project -> Source Code Management -> Git
+https://github.com/student123-code/hello-world2025.git
+8.	Build Now -> Console Output
+
+
+9.	CICD Pipeline -> Configure -> Environment -> Add build Step -> Invoke top-level Maven targets -> Maven version -> Mavenlatest -> Goals -> clean compile package
+10.	Click on apply -> Save -> Build Now -> Console output
