@@ -1,0 +1,22 @@
+Part1........
+##First Install jenkins if not there in system 
+##Install "Build Pipeline" Plugin
+
+Paart2........
+1.	Create three new item 1. Test 2. Staging 3. Production 
+2.	In all item Build Step -> Execute Shell
+Type
+sleep 10
+echo "This is test phase" ------>For Test Item similarly change the text for other 2 tests
+
+Part3......
+3.	In go to test -> configure -> Post-build Actions -> Build other projects -> staging
+4.	Similarly in staging Build other projects -> production
+5.	Install Plugin Build Pipeline
+6.	Create new view -> Build Pipeline View -> Pipeline Flow -> Select Initial Job -> test
+
+Part4....
+1.	All thing remain same 
+2.	Create new job name QA-test -> Freestyle -> same Execute shell script
+3.	In go to test-> configure -> Post-build Actions -> Build other projects -> staging, QA-test
+4.	Run the Build Pipeline View
