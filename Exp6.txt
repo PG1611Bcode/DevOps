@@ -1,1 +1,22 @@
+Part1......
+Go to Dashboard > Manage Jenkins > Security.
+For TCP port for inbound agents, select Fixed and enter a port number, like 50000 ---->save
+In terminal ------>sudo ufw allow 50000/tcp
+
+Part2.......
+Dashboard > Manage Jenkins > Nodes > New Node > //name it// > permanent agent > create
+In configuration > //name same as before // > IN terminal--->pwd--->copy path and paste in Remote root directory > Labels--->//name same as before// 
+Check the box environment variable--->List of variables add name=java_home ,and java path from herefind / -type f -name java 
+
+Part3......
+click on created node and run the commmands for Unix in terminal
+Refresh Agent 2 node it is now connected 
+
+part4.....
+Dashboard > New Item > fresstyle
+Check the box for "Restrict where this project can be run"
+In the Label Expression box, type the label you gave your created node
+Build Steps > Execute shell > echo "Hello, Welcome to session on MASTER SLAVE ARCHITECTURE IN JENKINS!!!"
+Build > Console output :Success with the above line ^
+
 
