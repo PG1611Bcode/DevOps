@@ -27,3 +27,9 @@ Click "Generate new token (classic)" and check repo option and click Generate To
 Now Terminal.......
 git remote set-url origin https://<YOUR_TOKEN>@github.com/<YOUR_USERNAME>/<Your REPO NAME>.git
 git push origin main
+
+Part4.........
+git log
+git show
+git revert <use the ID of your "Initial commit" from git log> ----------->EXAMPLE:34daf5145387eba4ce0e0310301e723eef96b0d3
+#### EDITOR WILL OPEN JUST SAVE AND CLOSE IT 
