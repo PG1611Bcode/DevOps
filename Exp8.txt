@@ -1,0 +1,16 @@
+Part1.....
+sudo su
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+docker version
+
+part2.....
+docker login
+docker run hello-world
+docker pull mysql
+docker ps
+docker images
+docker run mysql
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=password -d mysql
+docker exec -it mysql bash
+mysql -u root -p ---->enter the password:password
