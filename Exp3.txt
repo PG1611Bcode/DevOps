@@ -1,0 +1,39 @@
+Part1.....
+sudo apt update
+sudo apt-get install git
+git --version
+git config --global user.name "your_username"
+git config --global user.email "your_email@example.com"
+git config --list
+
+Part2.......
+Create Remote Repo on GitHub: Go to www.github.com, sign in, and click the "Create a Repository" button.Check Add readme file and create Repo
+
+Now Terminal:
+mkdir workspace
+cd workspace/
+git clone <Your repo URL PASTE HERE>
+cd <Your REPO NAME>/
+
+Part3........
+Go to your GitHub account. Navigate to: Settings -> Developer settings -> Personal access tokens -> Tokens (classic).
+Click "Generate new token (classic)" and check repo option and click Generate Token and copy paste it somewhere
+Now Terminal.......
+git remote set-url origin https://<YOUR_TOKEN>@github.com/<YOUR_USERNAME>/<Your REPO NAME>.git
+
+Part4.......
+git branch feature
+git branch
+git checkout feature
+git branch
+echo "This text was added originally while in the feature branch" >> hello.py
+cat hello.py
+git status
+git add hello.py
+git commit -m "Added a line in feature branch"
+git checkout main
+git merge feature
+cat hello.py
+git push origin main ---------->Check Github Page you will see the hello.py file now contains the new line.
+git branch -d feature  --------->Delete Branch
+git branch ------->Verify deleted branch
