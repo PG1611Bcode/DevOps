@@ -1,0 +1,29 @@
+Part1.....
+sudo apt update
+sudo apt-get install git
+git --version
+git config --global user.name "your_username"
+git config --global user.email "your_email@example.com"
+git config --list
+
+Part2.......
+Create Remote Repo on GitHub: Go to www.github.com, sign in, and click the "Create a Repository" button.Check Add readme file and create Repo
+
+Now Terminal:
+mkdir workspace
+cd workspace/
+git clone <Your repo URL PASTE HERE>
+cd <Your REPO NAME>/
+touch hello.py
+gedit hello.py -------->and write a basic code in it
+git status  --------->Displayed as red its ok
+git add hello.py
+git status  --------->Displayed as green done
+git commit -m "First Python File"
+
+Part3........
+Go to your GitHub account. Navigate to: Settings -> Developer settings -> Personal access tokens -> Tokens (classic).
+Click "Generate new token (classic)" and check repo option and click Generate Token and copy paste it somewhere
+Now Terminal.......
+git remote set-url origin https://<YOUR_TOKEN>@github.com/<YOUR_USERNAME>/<Your REPO NAME>.git
+git push origin main
