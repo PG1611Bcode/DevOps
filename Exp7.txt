@@ -1,0 +1,10 @@
+part1.............
+Open Firefox > Go to the Add-ons Page > Search selenium-ide > Add to Firefox > Launch Selenium IDE
+
+part2.........
+Create a new project > TYPE NAME:selenium_demo 
+Rename the Test(To--->seldevops_test) > Start Recording > Set URL(----->https://www.google.com/) > Start Recording
+
+NEW WINDOW WILL OPEN 
+Type(--->Selenium DevOps Tutorials) > open any site on top > Stop Recording
+Select your test > "Run Current Test" button (the "play" triangle) > Observer > Check Logs all should be checked green
